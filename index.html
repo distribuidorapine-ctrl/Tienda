@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Tienda</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="logo">🛒 MiTienda</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="boton-carrito" onclick="mostrarCarrito()">
+            🛒 Carrito
+            <span id="contador">0</span>
+        </button>
+    </header>
+
+
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+
+        <div class="inicio-texto">
+            <h1>Bienvenido a <span>MiTienda</span></h1>
+
+            <p>
+                Encuentra productos increíbles a los mejores precios.
+            </p>
+
+            <a href="#productos" class="boton">
+                Ver productos
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="productos">
+
+        <h2>Nuestros productos</h2>
+
+        <div class="linea"></div>
+
+        <div id="listaProductos" class="grid-productos">
+            <!-- Los productos aparecen desde JavaScript -->
+        </div>
+
+    </section>
+
+
+    <!-- CARRITO -->
+    <div id="carrito" class="carrito">
+
+        <div class="carrito-contenido">
+
+            <button class="cerrar" onclick="cerrarCarrito()">✕</button>
+
+            <h2>🛒 Tu carrito</h2>
+
+            <div id="productosCarrito"></div>
+
+            <div class="total">
+                Total:
+                <strong>$<span id="total">0.00</span></strong>
+            </div>
+
+            <button class="comprar" onclick="comprar()">
+                Comprar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <p>
+            ¿Tienes alguna pregunta? Escríbenos.
+        </p>
+
+        <a href="mailto:mitienda@email.com">
+            📧 mitienda@email.com
+        </a>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>© 2026 MiTienda - Todos los derechos reservados</p>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
