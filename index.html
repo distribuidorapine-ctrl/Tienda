@@ -1,83 +1,312 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mi Tienda</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Fútbol Store ⚽</title>
 
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <!-- ENCABEZADO -->
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
     <header>
-        <div class="logo">🛒 MiTienda</div>
+
+        <div class="logo">
+            ⚽ Fútbol Store
+        </div>
 
         <nav>
             <a href="#inicio">Inicio</a>
-            <a href="#productos">Productos</a>
-            <a href="#contacto">Contacto</a>
+
+            <a href="#productos">
+                Productos
+            </a>
+
+            <a href="#equipos">
+                Equipos
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
         </nav>
 
-        <button class="boton-carrito" onclick="mostrarCarrito()">
+        <button
+            class="boton-carrito"
+            onclick="mostrarCarrito()"
+        >
             🛒 Carrito
-            <span id="contador">0</span>
+
+            <span id="contador">
+                0
+            </span>
         </button>
+
     </header>
 
 
-    <!-- INICIO -->
-    <section id="inicio" class="inicio">
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <section
+        id="inicio"
+        class="inicio"
+    >
 
         <div class="inicio-texto">
-            <h1>Bienvenido a <span>MiTienda</span></h1>
 
             <p>
-                Encuentra productos increíbles a los mejores precios.
+                🏆 TODO PARA LOS VERDADEROS
+                FANÁTICOS
             </p>
 
-            <a href="#productos" class="boton">
-                Ver productos
+            <h1>
+                VIVE EL
+                <span>FÚTBOL</span>
+            </h1>
+
+            <p>
+                Encuentra camisetas, balones,
+                zapatos y accesorios para
+                llevar tu pasión a otro nivel.
+            </p>
+
+            <a
+                href="#productos"
+                class="boton"
+            >
+                ⚽ VER PRODUCTOS
             </a>
+
         </div>
 
     </section>
 
 
-    <!-- PRODUCTOS -->
-    <section id="productos" class="productos">
 
-        <h2>Nuestros productos</h2>
+    <!-- =========================
+         CATEGORÍAS
+    ========================== -->
+
+    <section id="equipos" class="productos">
+
+        <h2>
+            CATEGORÍAS
+        </h2>
 
         <div class="linea"></div>
 
-        <div id="listaProductos" class="grid-productos">
-            <!-- Los productos aparecen desde JavaScript -->
+
+        <div class="grid-productos">
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    👕
+                </div>
+
+                <div class="producto-info">
+
+                    <h3>
+                        Camisetas
+                    </h3>
+
+                    <p class="descripcion">
+                        Camisetas de tus equipos
+                        favoritos.
+                    </p>
+
+                    <a
+                        href="#productos"
+                        class="boton"
+                    >
+                        Ver camisetas
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    ⚽
+                </div>
+
+                <div class="producto-info">
+
+                    <h3>
+                        Balones
+                    </h3>
+
+                    <p class="descripcion">
+                        Balones para entrenar
+                        y jugar partidos.
+                    </p>
+
+                    <a
+                        href="#productos"
+                        class="boton"
+                    >
+                        Ver balones
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    👟
+                </div>
+
+                <div class="producto-info">
+
+                    <h3>
+                        Zapatos
+                    </h3>
+
+                    <p class="descripcion">
+                        Calzado deportivo para
+                        máximo rendimiento.
+                    </p>
+
+                    <a
+                        href="#productos"
+                        class="boton"
+                    >
+                        Ver zapatos
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="producto-imagen">
+                    🧤
+                </div>
+
+                <div class="producto-info">
+
+                    <h3>
+                        Accesorios
+                    </h3>
+
+                    <p class="descripcion">
+                        Todo lo necesario para
+                        completar tu equipo.
+                    </p>
+
+                    <a
+                        href="#productos"
+                        class="boton"
+                    >
+                        Ver accesorios
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- CARRITO -->
-    <div id="carrito" class="carrito">
+
+    <!-- =========================
+         PRODUCTOS
+    ========================== -->
+
+    <section
+        id="productos"
+        class="productos"
+    >
+
+        <h2>
+            PRODUCTOS DESTACADOS
+        </h2>
+
+        <div class="linea"></div>
+
+        <div
+            id="listaProductos"
+            class="grid-productos"
+        >
+            <!--
+                Los productos se generan
+                automáticamente con JavaScript.
+            -->
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CARRITO
+    ========================== -->
+
+    <div
+        id="carrito"
+        class="carrito"
+    >
 
         <div class="carrito-contenido">
 
-            <button class="cerrar" onclick="cerrarCarrito()">✕</button>
+            <button
+                class="cerrar"
+                onclick="cerrarCarrito()"
+            >
+                ✕
+            </button>
 
-            <h2>🛒 Tu carrito</h2>
+            <h2>
+                ⚽ TU CARRITO
+            </h2>
 
-            <div id="productosCarrito"></div>
-
-            <div class="total">
-                Total:
-                <strong>$<span id="total">0.00</span></strong>
+            <div id="productosCarrito">
             </div>
 
-            <button class="comprar" onclick="comprar()">
-                Comprar
+            <div class="total">
+
+                <span>
+                    Total:
+                </span>
+
+                <strong>
+                    $<span id="total">
+                        0.00
+                    </span>
+                </strong>
+
+            </div>
+
+            <button
+                class="comprar"
+                onclick="comprar()"
+            >
+                🏆 FINALIZAR COMPRA
             </button>
 
         </div>
@@ -85,31 +314,61 @@
     </div>
 
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
 
-        <h2>Contáctanos</h2>
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+
+    <section
+        id="contacto"
+        class="contacto"
+    >
+
+        <h2>
+            📣 CONTÁCTANOS
+        </h2>
 
         <p>
-            ¿Tienes alguna pregunta? Escríbenos.
+            ¿Necesitas ayuda con tu compra?
         </p>
 
-        <a href="mailto:mitienda@email.com">
-            📧 mitienda@email.com
+        <p>
+            Estamos para ayudarte.
+        </p>
+
+        <a href="mailto:futbolstore@email.com">
+            📧 futbolstore@email.com
         </a>
 
     </section>
 
 
-    <!-- PIE DE PÁGINA -->
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
-        <p>© 2026 MiTienda - Todos los derechos reservados</p>
+        <p>
+            ⚽ Fútbol Store
+        </p>
+
+        <p>
+            Vive el fútbol. Juega con pasión.
+        </p>
+
+        <p>
+            © 2026 Fútbol Store
+        </p>
 
     </footer>
 
 
+    <!-- JAVASCRIPT -->
+
     <script src="index.js"></script>
 
 </body>
+
 </html>
